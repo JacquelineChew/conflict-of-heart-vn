@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 349, in script
+    define pg = Character(_(player_character))
+  File "game/script.rpy", line 349, in <module>
+    define pg = Character(_(player_character))
+NameError: name 'player_character' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 349, in script
+    define pg = Character(_(player_character))
+  File "C:\Users\JoshPC\Desktop\Renpy\renpy-7.3.5-sdk\renpy\ast.py", line 2108, in execute
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "C:\Users\JoshPC\Desktop\Renpy\renpy-7.3.5-sdk\renpy\python.py", line 2052, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 349, in <module>
+    define pg = Character(_(player_character))
+NameError: name 'player_character' is not defined
+
+Windows-7-6.1.7601-SP1
+Ren'Py 7.3.5.606
+Love_BotDotIo 1.0
+Fri Dec 18 02:13:45 2020
